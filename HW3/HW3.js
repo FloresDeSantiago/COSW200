@@ -10,10 +10,15 @@ stringMethod(str);
 
 
 function stringMethod(str) {
+
+    let myQuote = "There is nothing new under the sun. It has all been done before.";
+
     document.write("Original String: " + str + "<br>");
     document.write("String in lowercase: " + str.toLowerCase() + "<br>");
     document.write("String in uppercase: " + str.toUpperCase() + "<br>");
     document.write("Your string is " + str.length + " characters long." + "<br>")
+
+    document.write(myQuote + " " + myQuote)
 
 }
 
@@ -45,18 +50,18 @@ Create a program in CodePen that prompts for the input of at least five words (a
 STRING METHODS
 
 TODO Check to see if the string input meets the 25+ character limit. If it does not, send a message and ask for another string.
-TODO Output the original string as it was entered onto the web page document. ----------------------------------------------------------DONE
-TODO Output the original string in all lower case letters. Do not change the original string value. ------------------------------------------DONE
-TODO Output the original string in all upper case letters. Do not change the original string value. ------------------------------------------DONE
-TODO Output a message indicating the total characters within the string. ------------------------------------------------------------------DONE
+TODO Output the original string as it was entered onto the web page document. ---------------------------------------------------------- DONE
+TODO Output the original string in all lower case letters. Do not change the original string value. ------------------------------------------ DONE
+TODO Output the original string in all upper case letters. Do not change the original string value. ----------------------------------------- DONE
+TODO Output a message indicating the total characters within the string. ----------------------------------------------------------------- DONE
 TODO Output the characters between index 5 and index 10.
 TODO Output 5 characters starting from position 8.
-TODO Combine the string with another string of your choice that also has 25+ characters. Output the new string.
+TODO Combine the string with another string of your choice that also has 25+ characters. Output the new string. ----------------------- DONE
 TODO Finally, split your string into an array for the 2nd part of the assignment. Each word (not each character) should be a value for the array.
 
 
 ARRAY METHODS
-
+TODO ----------------------------------------------------------------------------------------------------------------------------------
 TODO Output the list of array values.
 TODO Output the total number of items in the array.
 TODO Remove the first item in the array. Output the new array values.
