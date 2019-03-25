@@ -1,0 +1,136 @@
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    Dark Souls Player Survey
+  </p>
+  <form id="survey-form" method="GET" action="/form_handler.php">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Player Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your Player name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Souls Level: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="Souls" id="number" min="1" max="125" class="input-field" placeholder="Souls">
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What is your class?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="Knight">Knight</option>
+      <option value="Mercenary">Mercenary</option>
+      <option value="Warrior">Warrior</option>
+      <option value="Herald">Herald</option>
+      <option value="Thief">Thief</option>
+      <option value="Assassin">Assassin</option>
+      <option value="Sorcerer">Sorcerer</option>
+      <option value="Pyromancer">Pyromancer</option>
+      <option value="Cleric">Cleric</option>
+      <option value="Deprived">Deprived</option>
+      </select>
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What plaform do you play in</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled selected value>Select an option:</option>
+      <option  value="PC">PC</option>
+      <option value="PS4">PS4</option>
+      <option value="Xbox One">Xbox One</option>
+      <option value="Switch">Switch</option>
+      <option value="PS3">PS3</option>
+      <option value="Xbox 360">Xbox 360</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How do you play the game?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Online<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Offline<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Depends on my mood<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+
+<!--
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What is your class?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="Knight">Knight</option>
+      <option value="Mercenary">Mercenary</option>
+      <option value="Warrior">Warrior</option>
+      <option value="Herald">Herald</option>
+      <option value="Thief">Thief</option>
+      <option value="Assassin">Assassin</option>
+      <option value="Sorcerer">Sorcerer</option>
+      <option value="Pyromancer">Pyromancer</option>
+      <option value="Cleric">Cleric</option>
+      <option value="Deprived">Deprived</option>
+      </select>
+      </div>
+    </div>
+-->
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Which Souls-type games have you played?<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Demons Souls</label></li>
+          <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Dark Souls </label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Dark Souls 2</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Bloodborne</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Dark Souls 3</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Nioh</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Lords of the Fallen</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">The Surge</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Would you like to add anything else?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
