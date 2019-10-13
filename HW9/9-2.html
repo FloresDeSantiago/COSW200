@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript &amp; jQuery - Chapter 12: Filtering, Searching, and Sorting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>CreativeFolk</h1>
+</header>
+
+<div class="about">
+    <h2>My Videos</h2>
+    <div class="bio">
+        <img src="img/camille.jpg" alt="Camille's profile picture" />
+        <h4>Camille Berger</h4>
+        <div class="location">Paris, France</div>
+    </div>
+</div>
+<p align="center"><a href="9-1.html">View Filtered Images</a></p>
+<table class="sortable">
+    <thead>
+    <tr>
+        <th data-sort="name">Alt tag</th>
+        <th data-sort="name">Data tag</th>
+        <th data-sort="name">Filename</th>
+        <th data-sort="name">Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Crown</td>
+        <td>Fantasy,Red</td>
+        <td>1.png</td>
+        <td><img src="img/1.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Stars</td>
+        <td>Fantasy,Nature</td>
+        <td>2.png</td>
+        <td><img src="img/2.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Santa</td>
+        <td>Holidays,Person</td>
+        <td>3.png</td>
+        <td><img src="img/3.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Leaf</td>
+        <td>Green,Nature</td>
+        <td>4.png</td>
+        <td><img src="img/4.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Car</td>
+        <td>Green,Thing</td>
+        <td>5.png</td>
+        <td><img src="img/5.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Books</td>
+        <td>Blue,Thing</td>
+        <td>6.png</td>
+        <td><img src="img/6.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Einstien</td>
+        <td>Blue,Person</td>
+        <td>7.png</td>
+        <td><img src="img/7.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Hipster</td>
+        <td>Green,Person</td>
+        <td>8.png</td>
+        <td><img src="img/8.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Wand</td>
+        <td>Fantasy,Thing</td>
+        <td>9.png</td>
+        <td><img src="img/9.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Baby</td>
+        <td>Green,Person</td>
+        <td>10.png</td>
+        <td><img src="img/10.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>Tech,Thing</td>
+        <td>11.png</td>
+        <td><img src="img/11.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>USB</td>
+        <td>Tech,Thing</td>
+        <td>12.png</td>
+        <td><img src="img/12.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Teepee</td>
+        <td>Building,Thing</td>
+        <td>13.png</td>
+        <td><img src="img/13.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Campfire</td>
+        <td>Nature,Red</td>
+        <td>14.png</td>
+        <td><img src="img/14.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Trees</td>
+        <td>Green,Nature</td>
+        <td>15.png</td>
+        <td><img src="img/15.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Tree</td>
+        <td>Green,Nature</td>
+        <td>16.png</td>
+        <td><img src="img/16.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Bonzai Tree</td>
+        <td>Green,Nature</td>
+        <td>17.png</td>
+        <td><img src="img/17.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Books</td>
+        <td>Blue,Thing</td>
+        <td>18.png</td>
+        <td><img src="img/18.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Buildings</td>
+        <td>Building,Thing</td>
+        <td>19.png</td>
+        <td><img src="img/19.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>House</td>
+        <td>Building,Thing</td>
+        <td>20.png</td>
+        <td><img src="img/20.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Shield</td>
+        <td>Fantasy,Thing</td>
+        <td>21.png</td>
+        <td><img src="img/21.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Car</td>
+        <td>Green,Thing</td>
+        <td>22.png</td>
+        <td><img src="img/22.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Snowman</td>
+        <td>Holidays,Person</td>
+        <td>23.png</td>
+        <td><img src="img/23.png" height="50%" width="50%" /></td>
+    </tr>
+    <tr>
+        <td>Flower</td>
+        <td>Green,Nature</td>
+        <td>24.png</td>
+        <td><img src="img/24.png" height="50%" width="50%" /></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/sort-table.js"></script>
+
+</body>
+</html>

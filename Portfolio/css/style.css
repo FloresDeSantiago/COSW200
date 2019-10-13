@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Merriweather');
+body {
+  background-color: #3b3c44;
+  font-family: arial, helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.welcome-section {
+  margin-top:300px;
+  display: block;
+  height: 100vh;
+}
+
+.info {
+  border-top: 2px solid #32333a;
+  padding-top:50px;
+}
+
+.page-footer {
+  background-color: #32333a;
+  padding-top:50px;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
+h4 {
+  font-family: 'Abel', sans-serif;
+}
+
+.modal-title  {
+  color:#000000;
+}
+
+.modal-body {
+  color:#000000;
+}
+
+a {
+  font-family: arial, helvetica, sans-serif;
+  font-size:16px;
+  color:#7acb18;
+  text-decoration:none;
+  text-transform:capitalize;
+  }
+   
+a:hover {
+  font-family: arial, helvetica, sans-serif;
+  font-size:16px;
+  color:#ffffff;
+  text-transform:capitalize;
+           }
+
+.btn {
+  background-color:#7acb18;
+  border:0px;
+}
+
+.btn:hover {
+  background-color:#7acb18;
+  border:0px;
+}
+
+@media only screen and (max-width: 400px) {
+.welcome-section {
+  height: 100vh;
+}
+}

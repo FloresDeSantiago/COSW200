@@ -1,0 +1,7 @@
+{"students": [
+  { "firstName": "Aldo" , "lastName": "frank" , "studentID": "0123456" , "email": "fakeemail@email.com" , "major": "Information Technology" , "gpa": 4.0},
+  { "firstName": "Codie" , "lastName": "Broduer" , "studentID": "6543210" , "email": "code@bro.com" , "major": "Art" , "gpa": 1.0},
+  { "firstName": "Carlos" , "lastName": "Flores" , "studentID": "5643210" , "email": "car@flo.com" , "major": "Security" , "gpa": 3.0},
+  { "firstName": "Jamie" , "lastName": "Jamie" , "studentID": "2134560" , "email": "jamie@jam.com" , "major": "Communications" , "gpa": 2.5},
+  { "firstName": "Cool" , "lastName": "Coolio" , "studentID": "4563210" , "email": "cool@coolio.com" , "major": "Cool" , "gpa": 4.0}
+]}
